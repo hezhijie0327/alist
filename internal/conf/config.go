@@ -102,7 +102,7 @@ func DefaultConfig() *Config {
 			Address:    "0.0.0.0",
 			UnixFile:   "",
 			HttpPort:   5244,
-			HttpsPort:  -1,
+			HttpsPort:  5245,
 			ForceHttps: false,
 			CertFile:   "",
 			KeyFile:    "",
@@ -155,7 +155,7 @@ func DefaultConfig() *Config {
 			AllowHeaders: []string{"*"},
 		},
 		S3: S3{
-			Enable: false,
+			Enable: true,
 			Port:   5246,
 			SSL:    false,
 		},
